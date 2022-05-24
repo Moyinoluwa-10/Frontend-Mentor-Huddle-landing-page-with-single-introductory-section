@@ -1,0 +1,156 @@
+:root {
+
+    /* Colors */
+
+    /* Primary */
+
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+
+}
+
+/* Styling Page */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(./images/bg-desktop.svg);
+    background-color: var(--Violet);
+    box-sizing: border-box;
+    padding: 50px 0px;
+}
+
+/* Styling Container */
+#container {
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* Styling Logo */
+#logo {
+    width: 200px;
+    margin-left: 60px;
+    margin-bottom: 70px;
+}
+
+/* Styling Text */
+#top {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 55px;
+}
+
+#bottom {
+    font-size: 16px;
+    line-height: 25px;
+    color: lightgray;
+}
+
+/* Styling Button */
+button {
+    padding: 15px 60px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    color: var(--Violet);
+    box-shadow: 1px 1px 9px 2px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: var(--Soft-Magenta);
+}
+
+/* Stylimg Icons */
+#icon {
+    margin-right: 50px;
+}
+
+.icon {
+    padding:  0.5em 0.6em;
+    border: 1px solid white;
+    border-radius: 60%;
+    margin-left: 15px;
+    cursor: pointer;
+    position: relative;
+    left: 87.5%;
+}
+
+.icon:hover {
+    border: 1px solid var(--Soft-Magenta);
+}
+
+i {
+    color: white;
+}
+
+i:hover {
+    color: var(--Soft-Magenta);
+}
+
+/* Responsiveness */
+@media screen and (max-width:500px) {
+    /* Styling Page */
+    body {
+        background-image: url(./images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        padding: 30px 20px;
+    }
+    
+    /* Styling Logo */
+    #logo {
+        margin-left: -5px;
+    }
+
+    /* Styling Container */
+    #container{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Styling Image */
+    #image{
+        margin-top: -20px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Styling Text */
+    #text{
+        box-sizing: border-box;
+        padding: 0 5px;
+    }
+
+    br {
+        display: none;
+    }
+
+    #top {
+        font-size: 28px;
+        line-height: 45px;
+    }
+
+    /* Styling Buttons */
+    button {
+        padding: 15px 90px ;
+    }
+
+    /* Styling Icons */
+    #icon {
+        text-align: center;
+        margin-top: 90px;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .icon {
+        float: none;
+        left: 0;
+    }
+
+}
