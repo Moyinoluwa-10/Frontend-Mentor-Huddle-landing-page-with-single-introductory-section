@@ -34,6 +34,12 @@ body {
     margin-bottom: 70px;
 }
 
+/* Styling Image */
+#image {
+    width: 650px;
+    max-width: 100%;
+}
+
 /* Styling Text */
 #top {
     font-family: 'Poppins', sans-serif;
@@ -63,14 +69,16 @@ button {
 
 button:hover {
     background-color: var(--Soft-Magenta);
+    color: white;
 }
 
-/* Stylimg Icons */
+/* Styling Icons */
 #icon {
     margin-right: 50px;
 }
 
-.icon {
+i {
+    color: white;
     padding:  0.5em 0.6em;
     border: 1px solid white;
     border-radius: 60%;
@@ -80,20 +88,100 @@ button:hover {
     left: 87.5%;
 }
 
-.icon:hover {
+i:hover {
+    color: var(--Soft-Magenta);
     border: 1px solid var(--Soft-Magenta);
 }
 
-i {
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
     color: white;
+    margin-top: 60px;
 }
 
-i:hover {
-    color: var(--Soft-Magenta);
+.attribution a { 
+    color: hsl(228, 76%, 39%); 
 }
+
 
 /* Responsiveness */
-@media screen and (max-width:500px) {
+@media screen and (min-width:940px) and (max-width:1200px) {
+    #image {
+        width: 500px;
+        max-width: 100%;
+    }
+
+    #bottom {
+        font-size: 14px;
+    }
+
+    #bottom br {
+        /* display:none */
+    }
+}
+@media screen and (min-width:600px) and (max-width:940px) {
+    /* Styling Page */
+    body {
+        background-image: url(./images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        padding: 30px 130px;
+    }
+    
+    /* Styling Logo */
+    #logo {
+        margin-left: -5px;
+    }
+
+    /* Styling Container */
+    #container{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Styling Image */
+    #image{
+        margin-top: -20px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Styling Text */
+    #text{
+        box-sizing: border-box;
+        padding: 0 5px;
+    }
+
+    br {
+        display: none;
+    }
+
+    #top {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    /* Styling Buttons */
+    button {
+        padding: 15px 90px ;
+    }
+
+    /* Styling Icons */
+    #icon {
+        margin-top: 90px;
+        margin-bottom: 10px;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    i {
+        left: 0;
+    }
+
+}
+
+@media screen and (max-width:600px) {
     /* Styling Page */
     body {
         background-image: url(./images/bg-mobile.svg);
@@ -131,8 +219,8 @@ i:hover {
     }
 
     #top {
-        font-size: 28px;
-        line-height: 45px;
+        font-size: 25px;
+        line-height: 40px;
     }
 
     /* Styling Buttons */
@@ -142,14 +230,13 @@ i:hover {
 
     /* Styling Icons */
     #icon {
-        text-align: center;
         margin-top: 90px;
         margin-bottom: 10px;
         margin-right: 0;
+        text-align: center;
     }
 
-    .icon {
-        float: none;
+    i {
         left: 0;
     }
 
