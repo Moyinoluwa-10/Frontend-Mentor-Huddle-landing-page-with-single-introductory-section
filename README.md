@@ -1,1 +1,1 @@
-# Project_9
+# Frontend Mentor | Huddle landing page with single introductory section solution
